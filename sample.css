@@ -1,0 +1,44 @@
+#widget {
+	position: relative;
+	width: 800px;
+	height: 600px;
+	margin: 50px auto;
+}
+
+#left-arrow, #right-arrow {
+	position: absolute;
+	top:280px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	opacity: 0.2;
+}
+#left-arrow:hover, #right-arrow:hover {
+	opacity: 0.8;
+}
+#left-arrow {
+	left: -50px;
+}
+
+#right-arrow {
+	right: -50px;
+}
+
+/*
+#frame {
+	height: 100%;
+	width: 100%;	
+	position: relative;
+	overflow: hidden;
+}
+#container {
+	position: absolute;
+	top: 0;
+	width: 2400px;
+	line-height: 600px;
+}
+#container img {
+	max-width: 800px;
+	max-height: 600px;
+	vertical-align: middle;
+}*/

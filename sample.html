@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>images sample</title>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+	<script type="text/javascript" src="slide.js"></script>
+	<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function() {
+		var slide = new Slide({
+			width: 800,
+			height: 600,
+			speed: 100,
+			images: function() {
+				var a = [];
+				for (var i = 1; i <= 5; i++) {
+					a.push("images/1 (" + i + ").jpg");
+				}
+				return a;
+			},
+			frame: document.querySelector("#frame")
+		});
+		document.querySelector("#left-arrow").addEventListener("click", function() {
+			slide.moveLeft();
+		});
+		document.querySelector("#right-arrow").addEventListener("click", function() {
+			slide.moveRight();
+		});
+	});
+	</script>
+</head>
+<body>
+<div id="widget">
+<div id="frame">
+</div>
+<img src="arrows/left-arrow-small.png" id="left-arrow" />
+<img src="arrows/right-arrow-small.png"id="right-arrow" />
+</div>
+</body>
+</html>
